@@ -9,14 +9,14 @@
 Redis veritabanı yapılandırılması **Redis** 
 ```JSON
 "Redis": {		
-		"AllowAdmin": true,
-		"Ssl": false,
-		"ConnectTimeout": 6000,
-		"ConnectRetry": 2,
-		"Database": 0,
-		"Hosts": [
-		{
-			"Host": "localhost",
-			"Port": "6379"
-		}]
+	"AllowAdmin": true,
+	"Ssl": false,
+	"ConnectTimeout": 6000,
+	"ConnectRetry": 2,
+	"Database": 0,
+	"Hosts": [
+	{
+		"Host": "localhost",
+		"Port": "6379"
+	}]
 }
