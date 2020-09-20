@@ -6,7 +6,7 @@
 [![Build Status](https://github.com/imperugo/StackExchange.Redis.Extensions/workflows/.NET%20Core/badge.svg?branch=v6)](https://github.com/imperugo/StackExchange.Redis.Extensions)
 [![NuGet](http://img.shields.io/nuget/v/StackExchange.Redis.Extensions.Core.svg?style=flat)](https://www.nuget.org/packages/StackExchange.Redis.Extensions.Core/)
 
-Redis veritabanı yapılandırılması **Redis** 
+**Redis** veritabanı yapılandırılması
 ```JSON
 "Redis": {		
 	"AllowAdmin": true,
