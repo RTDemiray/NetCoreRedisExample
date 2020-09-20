@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Products>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section class="pro-box mt-4 mb-4">
+        <div class="form-inline p-3">
+            <div class="col-md-10 col-9">
+                <h4>Shop by Bestselling Products (By <a href="https://www.facebook.com/er.omnath">Er. Om Nath</a>)</h4>
+            </div>
+            <div class="col-md-2 col-3 text-right">
+                <a href="/ShoppingCart" target='_blank' class="btn btn-success">ShoppingCart</a>
+            </div>
+        </div>
+        <div class="row product-grid p-2">
+            @foreach (var product in Model)
+            {
+                <div class=" border rounded product-card mb-3 p-2">
+                    <div class="pro-img">
+                        <a href="/AddCart/@product.id">
+                            <img style="width: 100%;" class="rounded" src="https://www.boffobear.com/admin_area/product_images/old-cake%2067.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <span style="font-size: 12px; color: green;" class="text-center">ID: @product.id</span>
+                        </div>
+                        <div>
+                            <label style="font-size: 14px;"><strong style="color: #057d09; ">@product.name</strong></label>
+                        </div>
+                        <div style="color: green;">Price: <strong>@product.price</strong></div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</body>
+</html>
